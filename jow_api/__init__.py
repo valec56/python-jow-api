@@ -117,7 +117,7 @@ class Jow:
 
         response_json = json.loads(response.text)
 
-        recipes = cls.__get_info(response_json["data"])
+        recipes = cls.__get_info(response_json["data"]["content"])
 
         return recipes
 
