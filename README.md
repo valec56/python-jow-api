@@ -14,7 +14,7 @@ pip install jow-api
 The package provides convenient functions for searching and obtaining recipe information. Here's an example:
 
 ```python
-from jow_api import Jow
+from src.jow_api import Jow
 
 # Perform a search for recipes containing the word "poulet"
 recipes = Jow.search("poulet", limit=5)

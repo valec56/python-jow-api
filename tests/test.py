@@ -1,4 +1,4 @@
-from jow_api import Jow
+from src.jow_api import Jow
 
 # Perform a search for recipes containing the word "poulet"
 recipes = Jow.search("poulet", 5)

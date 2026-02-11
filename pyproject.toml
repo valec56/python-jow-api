@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jow_api"
+version = "0.1.4"
+description = "Simple Python API for Jow.fr"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { text = "MIT" }
+authors = [
+  { name = "Nolan Otam" }
+]
+dependencies = [
+  "requests"
+]
+
+[project.urls]
+Homepage = "https://github.com/valec56/python-jow-api"
+OriginalProject = "https://github.com/NolanO64/python-jow-api"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
